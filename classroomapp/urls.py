@@ -6,6 +6,5 @@ from .views import *
 app_name = 'classroomapp'
 
 urlpatterns = [
-    path('', home),
     path('cohorts/', cohort_list, name='cohorts'),
 ]

@@ -1,0 +1,10 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+
+{% block content %}
+<ul>
+{% for cohort in all_cohorts %}
+    <li>{{cohort.id}}. {{cohort.name}}
+{% endfor %}
+</ul>
+{% endblock %}
