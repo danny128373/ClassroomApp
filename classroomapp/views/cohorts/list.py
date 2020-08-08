@@ -6,6 +6,7 @@ from classroomapp.views import Connection
 from classroomapp.models import Cohort
 
 
-# def cohort_list(request):
-#     if request.method == 'GET':
-#         with sqlite3.connect(Connection.db_path) as conn:
+def cohort_list(request):
+    if request.method == 'GET':
+        with sqlite3.connect(Connection.db_path) as conn:
+            conn.row_factory = sqlite3.Row
