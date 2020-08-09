@@ -8,4 +8,5 @@ app_name = 'classroomapp'
 urlpatterns = [
     path('cohorts/', cohort_list, name='cohorts'),
     path('exercises/', exercise_list, name='cohorts'),
+    path('students/', student_list, name='students'),
 ]
