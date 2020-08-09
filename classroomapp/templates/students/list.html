@@ -1,0 +1,12 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+<ol>
+{% for student in students_end_in_s %}
+        <li>{{student.first}} {{student.last}}' slack is {{student.slack}}</li>
+{% endfor %}
+{% for student in students_end_without_s %}
+        <li>{{student.first}} {{student.last}}'s slack is {{student.slack}}</li>
+{% endfor %}
+</ol>
+{% endblock content %}

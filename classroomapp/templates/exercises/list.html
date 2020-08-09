@@ -4,7 +4,7 @@
 {% block content %}
 <ol>
 {% for exercise in all_exercises %}
-    <li> {{exercise.name}}</li>
+    <li> {{exercise.name}} has to be completed using {{exercise.language}}.</li>
 {% endfor %}
 </ol>
 {% endblock %}
