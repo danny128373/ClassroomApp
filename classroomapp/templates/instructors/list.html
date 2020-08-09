@@ -1,0 +1,9 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+<ol>
+{% for instructor in all_instructors %}
+    <li>{{instructor.first}} {{instructor.last}} teaches at NSS.</li>
+{% endfor %}
+</ol>
+{% endblock content %}
